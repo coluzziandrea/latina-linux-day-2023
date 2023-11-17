@@ -1,6 +1,8 @@
 # latina-linux-day-2023
 Repository contenente esercitazione presentata al Linux Day a Latina il Novembre 2023
 
+Di seguito il link alle [slides presentate](https://docs.google.com/presentation/d/1XBWl-tYKE0cKizAwlZvif-pULRbUXU54ZZ4jL8vkMCs/edit?usp=drive_link).
+
 
 ## Start On Github Workspaces
 
