@@ -1,0 +1,40 @@
+/* CSS Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} 
+
+.title {
+    display: flex;
+    flex-direction: column;
+
+    color: #192bc2;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.agenda {
+    display: flex;
+}
+
+.linux-day-logo-container {
+    overflow: hidden;
+}
+
+.linux-day-logo {
+    border-radius: 8rem;
+}
