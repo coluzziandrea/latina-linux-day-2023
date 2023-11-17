@@ -1,3 +1,14 @@
+:root {
+    --primary-color-lighter: #78c0e0;
+    --primary-color-light: #449dd1;
+    --primary-color: #192bc2;
+    --primary-color-dark: #150578;
+    --primary-color-darker: #0e0e52;
+    --color-background: rgb(15 23 42);
+    --color-background-light: rgb(30 41 59);
+    --color-text: rgb(203 213 225);
+}
+
 /* CSS Resets */
 * {
     margin: 0;
@@ -7,34 +18,81 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
 }
 
 .container {
     display: flex;
     flex-direction: column;
     width: 100%;
-} 
+    align-items: center;
+    gap: 2rem;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--primary-color-lighter);
+    text-align: center;
+    padding: 0.5rem;
+}
 
 .title {
-    display: flex;
-    flex-direction: column;
+    color: var(--primary-color-darker);
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
 
-    color: #192bc2;
+
+.subtitle {
+    color: var(--primary-color-dark);
+    font-size: large;
+    font-weight: 200;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1.8px;
 }
 
 .main {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
 }
 
 .agenda {
     display: flex;
+    align-items: center;
 }
 
-.linux-day-logo-container {
-    overflow: hidden;
-}
 
 .linux-day-logo {
-    border-radius: 8rem;
+    border-radius: 5rem;
+    box-shadow: 0.5rem 0.5rem var(--primary-color-lighter);
+}
+
+table {
+    border-collapse: collapse;
+        display: inline-block;
+        text-align: left;
+        border-top: 1px solid #888;
+}
+
+table th,
+table td {
+    padding: 10px 20px;
+    border: 1px solid #888;
+    border-width: 0 1px 1px;
+}
+
+table th {
+    background: var(--primary-color);
+}
+
+table tr:nth-child(even) {
+    background: var(--color-background-light);
 }
