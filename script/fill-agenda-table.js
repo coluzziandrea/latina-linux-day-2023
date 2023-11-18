@@ -58,10 +58,9 @@ const agenda = [
 ]
 
 const table = document.getElementById("programma");
-let contatoreRiga = 1;
 
 for(let sessione of agenda) {
-    const row = table.insertRow(contatoreRiga);
+    const row = table.insertRow(1);
 
 
     const orarioCell = row.insertCell(0);
@@ -74,6 +73,5 @@ for(let sessione of agenda) {
     speakerCell.innerHTML = sessione.speaker;
     titoloCell.innerHTML = sessione.titolo;
 
-    contatoreRiga += 1
 }
 
